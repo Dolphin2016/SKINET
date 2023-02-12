@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
         <!-- <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5> -->
-        <img src="/assets/images/logo.png" style="max-height: 70px;" alt="logo">
+        <img src="/assets/images/logo.png" style="max-height: 70px;" alt="logo" routerLink="/" class="logo">
       <nav class="my-2 my-md-0 mr-md-3 text-uppercase" style="font-size: larger">
-        <a href="" class="p-2 text-dark">Home</a>
-        <a href="" class="p-2 text-dark">Shop</a>
-        <a href="" class="p-2 text-dark">Contact</a>
+        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="p-2">Home</a>
+        <a [routerLink]="['/shop']" routerLinkActive="active" class="p-2">Shop</a>
+        <a [routerLink]="[]" class="p-2">Contact</a>
       </nav>
       <div class="d-flex align-items-center">
         <a class="position-relative">
